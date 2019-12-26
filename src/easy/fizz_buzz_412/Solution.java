@@ -6,8 +6,8 @@ import java.util.List;
 /**
  * @author Aleksey Kurkov. Created on 25.12.2019
  * @version 1.0
- *          Solution of problem 412
- *          https://leetcode.com/problems/fizz-buzz
+ * Solution of problem 412
+ * https://leetcode.com/problems/fizz-buzz
  */
 
 class Solution {
