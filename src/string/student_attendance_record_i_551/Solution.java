@@ -2,41 +2,40 @@ package string.student_attendance_record_i_551;
 
 /**
  * @author Aleksey Kurkov. Created on 09.07.2017
- * @version 1.0
- *          Solution of problem 551
- *          https://leetcode.com/problems/student-attendance-record-i
+ * @version 1.0 Solution of problem 551 https://leetcode.com/problems/student-attendance-record-i
  */
 
 public class Solution {
-    public boolean checkRecord(String s) {
-        int countA = 0;
-        int countL = 0;
 
-        for (int i = 0; i < s.length(); i++) {
+  public boolean checkRecord(String s) {
+    int countA = 0;
+    int countL = 0;
 
-            if (s.charAt(i) == 'A') {
-                countA++;
+    for (int i = 0; i < s.length(); i++) {
 
-                if (countA > 1) {
-                    return false;
-                }
+      if (s.charAt(i) == 'A') {
+        countA++;
 
-            } else if (s.charAt(i) == 'L') {
-                countL++;
-
-                if (countL > 2) {
-                    return false;
-                }
-
-                if (i + 1 < s.length()) {
-
-                    if (s.charAt(i + 1) != 'L') {
-                        countL = 0;
-                    }
-                }
-            }
+        if (countA > 1) {
+          return false;
         }
 
-        return true;
+      } else if (s.charAt(i) == 'L') {
+        countL++;
+
+        if (countL > 2) {
+          return false;
+        }
+
+        if (i + 1 < s.length()) {
+
+          if (s.charAt(i + 1) != 'L') {
+            countL = 0;
+          }
+        }
+      }
     }
+
+    return true;
+  }
 }

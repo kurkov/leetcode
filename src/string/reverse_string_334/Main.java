@@ -5,9 +5,10 @@ package string.reverse_string_334;
  * @version 1.0
  */
 public class Main {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        String s = "hello";
-        System.out.println(solution.reverseString(s));
-    }
+
+  public static void main(String[] args) {
+    Solution solution = new Solution();
+    String s = "hello";
+    System.out.println(solution.reverseString(s));
+  }
 }

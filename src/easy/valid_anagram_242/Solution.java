@@ -4,26 +4,25 @@ import java.util.Arrays;
 
 /**
  * @author Aleksey Kurkov. Created on 08.01.20
- * @version 1.0
- * Solution of the problem 242
- * https://leetcode.com/problems/valid-anagram
+ * @version 1.0 Solution of the problem 242 https://leetcode.com/problems/valid-anagram
  */
 class Solution {
-    public boolean isAnagram(String s, String t) {
-        boolean result = false;
 
-        if (t.length() != s.length()) {
-            return false;
-        } else {
-            char[] charArrayS = s.toCharArray();
-            char[] charArrayT = t.toCharArray();
+  public boolean isAnagram(String s, String t) {
+    boolean result = false;
 
-            Arrays.sort(charArrayS);
-            Arrays.sort(charArrayT);
+    if (t.length() != s.length()) {
+      return false;
+    } else {
+      char[] charArrayS = s.toCharArray();
+      char[] charArrayT = t.toCharArray();
 
-            result = Arrays.equals(charArrayS, charArrayT);
-        }
+      Arrays.sort(charArrayS);
+      Arrays.sort(charArrayT);
 
-        return result;
+      result = Arrays.equals(charArrayS, charArrayT);
     }
+
+    return result;
+  }
 }

@@ -5,9 +5,10 @@ package string.reverse_words_in_a_string_iii_557;
  * @version 1.0
  */
 public class Main {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        String s = "Let's take LeetCode contest";
-        System.out.println(solution.reverseWords(s));
-    }
+
+  public static void main(String[] args) {
+    Solution solution = new Solution();
+    String s = "Let's take LeetCode contest";
+    System.out.println(solution.reverseWords(s));
+  }
 }

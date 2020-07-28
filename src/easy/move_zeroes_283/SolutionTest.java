@@ -1,8 +1,8 @@
 package easy.move_zeroes_283;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertArrayEquals;
+
+import org.junit.Test;
 
 /**
  * @author Aleksey Kurkov. Created on 27.12.19
@@ -10,14 +10,14 @@ import static org.junit.Assert.assertArrayEquals;
  */
 public class SolutionTest {
 
-    @Test
-    public void testExample() {
-        int[] nums = {0, 1, 0, 3, 12};
-        Solution solution = new Solution();
+  @Test
+  public void testExample() {
+    int[] nums = {0, 1, 0, 3, 12};
+    Solution solution = new Solution();
 
-        int[] expectedResult = {1, 3, 12, 0, 0};
-        solution.moveZeroes(nums);
+    int[] expectedResult = {1, 3, 12, 0, 0};
+    solution.moveZeroes(nums);
 
-        assertArrayEquals(expectedResult, nums);
-    }
+    assertArrayEquals(expectedResult, nums);
+  }
 }

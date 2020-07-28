@@ -5,8 +5,9 @@ package easy.fizz_buzz_412;
  * @version 1.0
  */
 public class Main {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.fizzBuzz(10));
-    }
+
+  public static void main(String[] args) {
+    Solution solution = new Solution();
+    System.out.println(solution.fizzBuzz(10));
+  }
 }
